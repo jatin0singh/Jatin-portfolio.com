@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            padding: 20px 10px;
+            background: rgba(20, 20, 20, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #f39c12;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding-top: 80px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #f39c12;
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.5);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+        #full-image {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
+        }
+        #full-image img {
+            max-width: 90%;
+            max-height: 90%;
+            border: 5px solid #f39c12;
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.5);
+        }
+        #full-image:target {
+            display: flex;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #f1c40f;
+        }
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+            background: #f39c12;
+            border: none;
+            border-radius: 30px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(243, 156, 18, 0.5);
+        }
+        .btn:hover {
+            background: #f1c40f;
+            color: #0a0a0a;
+            transform: scale(1.1);
+        }
+        footer {
+            padding: 10px;
+            background: rgba(20, 20, 20, 0.9);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Welcome Coders</h1>
+    </header>
+    <div class="container">
+        <a href="#full-image">
+            <img src="jatinpic.jpg" alt="Profile Picture" class="profile-pic">
+        </a>
+        <div id="full-image">
+            <img src="jatinpic.jpg" alt="Full Profile Picture">
+        </div>
+        <h2>Hello, I'm Jatin Singh Chouhan</h2>
+        <p>I'm a passionate Web developer dedicated to crafting beautiful and functional digital experiences. Explore my work and connect with me!</p>
+        <a href="education.html" class="btn">projects</a>
+         
+        <a href=" https://www.instagram.com/__jatin_chauhan____/" class="btn" target="_blank">Instagram</a>
+        <a href=" https://www.linkedin.com/in/jatin-singh-a690522a7/" class="btn" target="_blank">LinkedIn</a>
+    </div>
+    <div id="contact" class="container" style="padding: 40px 20px; background: #151515;">
+        <h2>Contact Me</h2>
+        <p>Feel free to contact me!</p>
+        <p>Email: <a href=" chouhanjatinsingh1@gmail.com" style="color: #f39c12; text-decoration: none;">chouhanjatinsingh1@gmail.com</a></p> 
+
+    </div>
+     
+    
+    <footer>
+        <p>&copy; 2025 Jatin. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
